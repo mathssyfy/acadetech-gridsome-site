@@ -1,15 +1,5 @@
 require('dotenv').config()
 module.exports = {
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        // ...global plugins
-      ]
-    }
-  },
   plugins: [
     {
       use: '@gridsome/source-contentful',
@@ -18,8 +8,8 @@ module.exports = {
         accessToken: process.env.CTF_CDA_ACCESS_TOKEN, // required
         host: 'cdn.contentful.com',
         environment: 'master',
-        typeName: 'Contentful',
-        
+        typeName: 'Contentful'
+
       }
     }
   ]
