@@ -97,7 +97,7 @@ export default {
       activenav: 'secundary',
       color: 'secondary',
       clipped: true,
-      drawer: true,
+      drawer: null,
       fixed: false,
       isSidebarOpen: false,
       miniVariant: false,
