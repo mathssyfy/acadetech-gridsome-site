@@ -1,11 +1,14 @@
 <template>
   <Layout>
+      <h1>Test MD</h1>
+    
     <h3>Routing ok</h3>
     <p>{{ $page.post.title }}</p>
-    <p>{{ $page.post.body }}</p>
-    <vue-markdown
-      :source="$page.post.body"
+    
+    <gridsome-markdown-it
+    :source="$page.post.body"
     />
+    
   </Layout>
 </template>
 
@@ -19,11 +22,11 @@ query postQuery($path: String!) {
 </page-query>
 
 <script>
-
+import GridsomeMarkdownIt from '@/components/GridsomeMarkdownIt'
 export default {
-  components: {
-
-  }
-
-}
+    components: {
+        GridsomeMarkdownIt
+    },
+  
+};
 </script>
