@@ -1,9 +1,7 @@
 <template>
   <Layout>
-      <h1>Test MD</h1>
-    
-    <h3>Routing ok</h3>
-    <p>{{ $page.post.title }}</p>
+      
+    <h1>{{ $page.post.title }}</h1>
     
     <gridsome-markdown-it
     :source="$page.post.body"
@@ -27,6 +25,18 @@ export default {
     components: {
         GridsomeMarkdownIt
     },
+    computed: {
+        tests() {
+            return '+ Routage ok :muscle:\n'
+            + '+ KaTeX ok :punch:\n'
+            + '+ Table Of Content :v:\n'
+            + '+ Syntax Highlighting :sunglasses:\n'
+            + '## TODO\n'
+            + '+ Container :+1: CSS :-1:\n'
+            + '+ Lines Numbering :alien:\n'
+            + '+ Hop Gerflor !!! :heart_eyes:\n'
+        }
+    }
   
 };
 </script>

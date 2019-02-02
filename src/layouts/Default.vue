@@ -38,7 +38,7 @@
       color="primary"
     >
       <v-btn
-        :color="color"
+       
         dark
         icon
         @click.stop="drawer = !drawer"
@@ -53,16 +53,17 @@
         to="/"
       >
         <v-icon>home</v-icon>
-      </v-btn><v-btn
+     </v-btn>
+      <v-btn
         dark
         icon
         router
         exact
-        to="/maths"
+        to="/blogs"
       >
         <v-icon>school</v-icon>
       </v-btn>
-      <v-btn
+       <!--<v-btn
         dark
         icon
         router
@@ -70,7 +71,7 @@
         to="/dev"
       >
         <v-icon>computer</v-icon>
-      </v-btn>
+      </v-btn> -->
 
       <!-- <v-toolbar-title v-text="title"/> -->
 
@@ -96,7 +97,7 @@ export default {
       activenav: 'secundary',
       color: 'secondary',
       clipped: true,
-      drawer: false,
+      drawer: true,
       fixed: false,
       isSidebarOpen: false,
       miniVariant: false,
@@ -105,9 +106,9 @@ export default {
       title: 'AcadeTech',
       items: [
         { icon: 'home', title: 'Accueil', to: '/' },
-        { icon: 'school', title: 'Mathématiques', to: '/maths' },
-        { icon: 'computer', title: 'Développement', to: '/dev' },
-        { icon: 'computer', title: 'Cover', to: '/cover' }
+         { icon: 'school', title: 'Blogs', to: '/blogs' },
+        /*{ icon: 'computer', title: 'Développement', to: '/dev' },
+        { icon: 'computer', title: 'Cover', to: '/cover' } */
       ]
     }
   }
