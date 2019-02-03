@@ -25,6 +25,12 @@ import GridsomeMarkdownIt from '@/components/GridsomeMarkdownIt'
 export default {
   components: {
     GridsomeMarkdownIt
+  },
+  metaInfo: {
+    title: 'AcadeTech',
+    meta: [
+      { name: 'author', content: 'David Couronné' }
+    ],
   }
 
 }

@@ -1,12 +1,14 @@
 {
-  "name": "gridsome-starter-contentful",
+  "name": "acadetech-gridsome-site",
+  "version": "1.0.3",
+  "description": "DavidCouronne@mathssyfy website ",
+  "author": "David Couronné <couronne.david@gmail.com>",
   "private": true,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint"
-    
   },
   "dependencies": {
     "@gridsome/source-contentful": "^0.2.1",
@@ -43,17 +45,6 @@
     "stylus-loader": "^3.0.2",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.6.2",
-    
-   
     "vue-template-compiler": "^2.5.22"
-    
-    
-    
-    
-    
-    
-    
-    
-    
   }
 }

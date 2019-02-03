@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <img-break-point></img-break-point>
-    <!-- <hero-image /> -->
-    <!-- aspect-ratio="1.7" -->
+    
+    <hero-image />
+    <home-features></home-features>
     <v-layout
       align-center
       column
@@ -14,20 +14,7 @@
       <h2>Total Posts: {{ $page.posts.totalCount }}</h2>
     </v-layout>
 
-    <h1>Hello, world!</h1>
-
-    <div
-      v-for="item in $page.posts.edges"
-      :key="item.slug"
-    >
-      <h3>
-        <g-link :to="`blog-post/${item.node.slug}`">
-          {{ item.node.title }}
-        </g-link>
-      </h3>
-      <small>{{ item.node.createdAt }}</small>
-      <!-- <p>{{ item.node.metadata.description }}</p> -->
-    </div>
+    
   </Layout>
 </template>
 
@@ -51,11 +38,18 @@
 <script>
 
 import HeroImage from '@/components/HeroImage'
-import ImgBreakPoint from '@/components/img/BreakPoint'
+import HomeFeatures from '@/components/HomeFeatures'
+
 export default {
   components: {
     HeroImage,
-    ImgBreakPoint
+    HomeFeatures
+  },
+  metaInfo: {
+    title: 'AcadeTech',
+    meta: [
+      { name: 'author', content: 'David Couronné' }
+    ],
   }
 }
 </script>
