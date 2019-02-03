@@ -2,7 +2,7 @@
   <Layout>
     <h1>{{ $page.post.title }}</h1>
     <v-img :src="$page.post.heroImage.file.url.src" />
-    <h1>{{ $page.post.heroImage.file.url.src }}</h1>
+    
     <gridsome-markdown-it
       :source="$page.post.body"
     />
