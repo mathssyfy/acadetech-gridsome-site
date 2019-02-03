@@ -1,7 +1,6 @@
 <template>
   <v-img
     :src="require('@/static/img/astrology-astronomy-atmosphere.jpg')"
-    
   >
     <v-layout
       column
@@ -11,7 +10,9 @@
       <div class="display-3 white--text mb-3 text-xs-center">
         {{ mainTitle }}
       </div>
-      <em class="white--text">{{ subTitle }}</em>
+      <em class="white--text">
+        {{ subTitle }}
+      </em>
       <v-btn
         class="mt-5 white white--text"
         dark

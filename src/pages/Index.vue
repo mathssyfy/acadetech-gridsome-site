@@ -1,12 +1,7 @@
 <template>
   <Layout>
-    <hero-image></hero-image>
-    <v-img
-      class="white--text"
-      :src="require('@/static/img/astrology-astronomy-atmosphere.jpg')"
-      alt="image"
-    >
-      <!-- aspect-ratio="1.7" -->
+    <hero-image />
+    <!-- aspect-ratio="1.7" -->
       <v-layout
         align-center
         column
@@ -17,9 +12,9 @@
         </h1>
         <h2>Total Posts: {{ $page.posts.totalCount }}</h2>
       </v-layout>
-    </v-img>
-    <h1>Hello, world!</h1>
     
+    <h1>Hello, world!</h1>
+
     <div
       v-for="item in $page.posts.edges"
       :key="item.slug"
@@ -32,7 +27,6 @@
       <small>{{ item.node.createdAt }}</small>
       <!-- <p>{{ item.node.metadata.description }}</p> -->
     </div>
-    
   </Layout>
 </template>
 
