@@ -92,7 +92,7 @@
 
     <v-footer
       :fixed="fixed"
-      app
+      
     >
       <v-flex xs12>
         <div class="grey--text darken-2 ml-3">
