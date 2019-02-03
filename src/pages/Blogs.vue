@@ -26,7 +26,7 @@
           id
           slug
           title
-          createdAt
+          createdAt(format: "D. MMMM YYYY")
          }
       }
 
