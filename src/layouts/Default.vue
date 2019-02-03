@@ -38,7 +38,7 @@
       color="primary"
     >
       <v-btn
-       
+
         dark
         icon
         @click.stop="drawer = !drawer"
@@ -53,7 +53,7 @@
         to="/"
       >
         <v-icon>home</v-icon>
-     </v-btn>
+      </v-btn>
       <v-btn
         dark
         icon
@@ -63,7 +63,7 @@
       >
         <v-icon>school</v-icon>
       </v-btn>
-       <!--<v-btn
+      <!--<v-btn
         dark
         icon
         router
@@ -106,8 +106,8 @@ export default {
       title: 'AcadeTech',
       items: [
         { icon: 'home', title: 'Accueil', to: '/' },
-         { icon: 'school', title: 'Blogs', to: '/blogs' },
-        /*{ icon: 'computer', title: 'Développement', to: '/dev' },
+        { icon: 'school', title: 'Blogs', to: '/blogs' }
+        /* { icon: 'computer', title: 'Développement', to: '/dev' },
         { icon: 'computer', title: 'Cover', to: '/cover' } */
       ]
     }

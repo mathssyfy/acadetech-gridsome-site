@@ -1,12 +1,11 @@
 <template>
   <Layout>
-      
     <h1>{{ $page.post.title }}</h1>
-    
+    <v-img :src="$page.post.heroImage.file.url.src" />
+    <h1>{{ $page.post.heroImage.file.url.src }}</h1>
     <gridsome-markdown-it
-    :source="$page.post.body"
+      :source="$page.post.body"
     />
-    
   </Layout>
 </template>
 
@@ -14,6 +13,8 @@
 query postQuery($path: String!) {
     post: contentfulBlogPost(path: $path){
     title
+    publishDate(format: "D. MMMM YYYY")
+  heroImage{file{url}}
     body
     }
 }
@@ -22,21 +23,9 @@ query postQuery($path: String!) {
 <script>
 import GridsomeMarkdownIt from '@/components/GridsomeMarkdownIt'
 export default {
-    components: {
-        GridsomeMarkdownIt
-    },
-    computed: {
-        tests() {
-            return '+ Routage ok :muscle:\n'
-            + '+ KaTeX ok :punch:\n'
-            + '+ Table Of Content :v:\n'
-            + '+ Syntax Highlighting :sunglasses:\n'
-            + '## TODO\n'
-            + '+ Container :+1: CSS :-1:\n'
-            + '+ Lines Numbering :alien:\n'
-            + '+ Hop Gerflor !!! :heart_eyes:\n'
-        }
-    }
-  
-};
+  components: {
+    GridsomeMarkdownIt
+  }
+
+}
 </script>

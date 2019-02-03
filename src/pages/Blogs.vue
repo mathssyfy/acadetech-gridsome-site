@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    
     <h1>Hello, world!</h1>
     <h2>Total Posts: {{ $page.posts.totalCount }}</h2>
     <div

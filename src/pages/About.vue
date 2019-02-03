@@ -1,10 +1,18 @@
 <template>
   <Layout>
-    <h1>About us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <hero-image></hero-image>
+  
+  
   </Layout>
 </template>
 
 <script>
-export default {}
+import ParallaxSub from '@/components/ParallaxSub'
+import HeroImage from '@/components/HeroImage'
+export default {
+  components: {
+    ParallaxSub,
+    HeroImage
+  }
+}
 </script>
