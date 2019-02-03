@@ -1,6 +1,7 @@
 <template>
   <v-img
     :src="require('@/static/img/astrology-astronomy-atmosphere.jpg')"
+       
   >
     <v-layout
       column
@@ -33,14 +34,27 @@ export default {
     return {
       mainTitle: 'AcadeTech',
       subTitle: 'Kick-start your learning curve !',
-      btnText: 'Get Started'
+      btnText: 'Get Started',
+      windowSize: {
+        x: 0,
+        y: 0
+      }
     }
-  }
+  },
+  mounted () {
+      this.onResize()
+    },
+
+    methods: {
+      onResize () {
+        this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+      }
+    }
 }
 </script>
 
 <style lang="scss" scope>
-  .v-parallax {
+  .v-layout {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     z-index: 100;
     font-size: 28px;
