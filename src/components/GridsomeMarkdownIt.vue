@@ -27,6 +27,13 @@ export default {
       const emoji = require('markdown-it-emoji')
       const container = require('@mathssyfy/markdown-it-container')
 
+      // L'ordre est important !
+      // TODO: Ajouter CSS pour container
+      // TODO: Ajouter slugify pour toc et anchor
+      // TODO: Ajouter props
+      // TODO: factor code
+      // TODO: Unit Test :((( !!!
+
       md.use(prism)
       md.use(anchor)
       md.use(toc)

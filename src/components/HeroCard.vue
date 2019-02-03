@@ -5,20 +5,32 @@
         <v-img
           :src="require('@/static/img/astrology-astronomy-atmosphere.jpg')"
           :height="windowSize.y-80"
-       :width="windowSize.x"
-       position="bottom"
-        ></v-img>
+          :width="windowSize.x"
+          position="bottom"
+        />
 
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+            <h3 class="headline mb-0">
+              Kangaroo Valley Safari
+            </h3>
             <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
           </div>
         </v-card-title>
 
         <v-card-actions>
-          <v-btn flat color="orange">Share</v-btn>
-          <v-btn flat color="orange">Explore</v-btn>
+          <v-btn
+            flat
+            color="orange"
+          >
+            Share
+          </v-btn>
+          <v-btn
+            flat
+            color="orange"
+          >
+            Explore
+          </v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -26,24 +38,24 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.',
-        windowSize: {
+export default {
+  data () {
+    return {
+      card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.',
+      windowSize: {
         x: 0,
         y: 0
       }
-      }
-    },
-    mounted () {
-      this.onResize()
-    },
+    }
+  },
+  mounted () {
+    this.onResize()
+  },
 
-    methods: {
-      onResize () {
-        this.windowSize = { x: window.innerWidth, y: window.innerHeight }
-      }
+  methods: {
+    onResize () {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     }
   }
+}
 </script>

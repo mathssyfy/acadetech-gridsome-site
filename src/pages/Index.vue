@@ -1,8 +1,7 @@
 <template>
   <Layout>
-    
     <hero-image />
-    <home-features></home-features>
+    <home-features />
     <v-layout
       align-center
       column
@@ -13,8 +12,6 @@
       </h1>
       <h2>Total Posts: {{ $page.posts.totalCount }}</h2>
     </v-layout>
-
-    
   </Layout>
 </template>
 
@@ -49,7 +46,7 @@ export default {
     title: 'AcadeTech',
     meta: [
       { name: 'author', content: 'David Couronné' }
-    ],
+    ]
   }
 }
 </script>

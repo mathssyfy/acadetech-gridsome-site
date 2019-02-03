@@ -30,7 +30,7 @@ export default {
     title: 'AcadeTech',
     meta: [
       { name: 'author', content: 'David Couronné' }
-    ],
+    ]
   }
 
 }
