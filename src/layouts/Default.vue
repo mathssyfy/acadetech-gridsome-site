@@ -92,7 +92,6 @@
 
     <v-footer
       :fixed="fixed"
-      
     >
       <v-flex xs12>
         <div class="grey--text darken-2 ml-3">
@@ -121,7 +120,7 @@ export default {
       color: 'secondary',
       clipped: true,
       drawer: null,
-      fixed: false,
+      fixed: true,
       isSidebarOpen: false,
       miniVariant: false,
       right: true,
