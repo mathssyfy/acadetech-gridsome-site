@@ -4,7 +4,8 @@
     AcadeTech Gridsome Site
   </a>
 </p>
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 
 
@@ -81,7 +82,7 @@ query postQuery($path: String!) {
 - [x] markdown-it
 - [x] markdown-it ... emoji, katex, prism, anchor, table-of-content, container, emoji
 
-Config markdown-it in `src/compontents/GridsomeMarkdownIt.vue`
+Config markdown-it in `src/components/GridsomeMarkdownIt.vue`
 
 
 
