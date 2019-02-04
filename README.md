@@ -29,7 +29,8 @@ Then:
 yarn develop #Or npm run develop
 ```
 
-### Configure with Contentful content named `Blog Post`with fields:
+### Configure with Contentful content named `Blog Post` with fields:
+
 + title
 + slug
 + description
@@ -37,7 +38,7 @@ yarn develop #Or npm run develop
 + heroImage
 + publishDate
 
-In 'scr/pages/bBlogs.vue`
+In `src/pages/Blogs.vue`
 
 ```
 <page-query>
@@ -58,7 +59,8 @@ In 'scr/pages/bBlogs.vue`
 </page-query>
 ```
 
-In `scr/templates/ContefulBlogPost.vue`
+In `src/templates/ContefulBlogPost.vue`
+
 ```
 <page-query>
 query postQuery($path: String!) {
@@ -79,7 +81,7 @@ query postQuery($path: String!) {
 - [x] markdown-it
 - [x] markdown-it ... emoji, katex, prism, anchor, table-of-content, container, emoji
 
-Config markdown-it in `scr/compontents/GridsomeMarkdownIt.vue`
+Config markdown-it in `src/compontents/GridsomeMarkdownIt.vue`
 
 
 
