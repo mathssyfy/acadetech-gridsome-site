@@ -1,19 +1,22 @@
 <template>
   <Layout>
-    <h1>Hello, world!</h1>
-    <h2>Total Posts: {{ $page.posts.totalCount }}</h2>
-    <div
-      v-for="item in $page.posts.edges"
-      :key="item.slug"
-    >
-      <h3>
-        <g-link :to="`blog-post/${item.node.slug}`">
-          {{ item.node.title }}
-        </g-link>
-      </h3>
-      <small>{{ item.node.createdAt }}</small>
-      <!-- <p>{{ item.node.metadata.description }}</p> -->
-    </div>
+    <v-container>
+      <v-layout
+        row
+        wrap
+      >
+        <v-flex
+          v-for="item in $page.posts.edges"
+          :key="item.slug"
+          xs12
+          sm6
+          lg4
+          pa-2
+        >
+          <post-list-item :item="item" />
+        </v-flex>
+      </v-layout>
+    </v-container>
   </Layout>
 </template>
 
@@ -26,6 +29,9 @@
           id
           slug
           title
+          description
+          heroImage{file{url}}
+          author{name}
           createdAt(format: "D. MMMM YYYY")
          }
       }
@@ -35,5 +41,10 @@
 </page-query>
 
 <script>
-export default {}
+import PostListItem from '@/components/Posts/PostListItem'
+export default {
+  components: {
+    PostListItem
+  }
+}
 </script>
