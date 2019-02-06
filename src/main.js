@@ -2,6 +2,7 @@ import Vuetify from 'vuetify'
 import colors from 'vuetify/es5/util/colors'
 import DefaultLayout from '~/layouts/Default.vue'
 
+
 // import 'vuetify/dist/vuetify.min.css'
 import '@/assets/stylus/main.styl'
 
