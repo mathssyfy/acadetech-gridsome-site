@@ -64,7 +64,6 @@
 </template>
 
 <script>
-
 export default {
   props: {
     item: {
@@ -72,6 +71,5 @@ export default {
       required: true
     }
   }
-
 }
 </script>

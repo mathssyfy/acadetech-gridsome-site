@@ -266,11 +266,7 @@ export default {
     shareSheet: false
   }),
   computed: {
-    ...mapGetters([
-      'getShareLinks',
-      'getPostComments',
-      'getSettings'
-    ]),
+    ...mapGetters(['getShareLinks', 'getPostComments', 'getSettings']),
     postDialog: {
       get () {
         return this.$store.state.postDialog
@@ -283,16 +279,19 @@ export default {
   methods: {
     postComment () {
       if (this.$refs.commentForm.validate()) {
-        this.$store.dispatch('postComment', {
-          id: this.article._id,
-          name: this.newComment.name,
-          email: this.newComment.email,
-          content: this.newComment.content,
-          moderated: this.getSettings.metadata.moderated_comments
-        }).then(() => {
-          console.log('Posted New Comment!')
-        })
-      } else { }
+        this.$store
+          .dispatch('postComment', {
+            id: this.article._id,
+            name: this.newComment.name,
+            email: this.newComment.email,
+            content: this.newComment.content,
+            moderated: this.getSettings.metadata.moderated_comments
+          })
+          .then(() => {
+            console.log('Posted New Comment!')
+          })
+      } else {
+      }
     },
     handleShare (post) {
       this.shareSheet = true
@@ -317,6 +316,6 @@ export default {
 
 <style lang="css">
 div.v-dialog {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 </style>

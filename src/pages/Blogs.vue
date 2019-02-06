@@ -30,7 +30,9 @@
           slug
           title
           description
-          heroImage{file{url}}
+          heroImage{
+            description
+            file{url}}
           author{name}
           createdAt(format: "D. MMMM YYYY")
          }

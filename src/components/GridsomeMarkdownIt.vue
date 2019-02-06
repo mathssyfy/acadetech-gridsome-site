@@ -1,7 +1,6 @@
 <template>
   <div>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.css" integrity="sha384-xNwWFq3SIvM4dq/1RUyWumk8nj/0KFg4TOnNcfzUU4X2gNn3WoRML69gO7waf3xh" crossorigin="anonymous"> -->
-
     <div v-html="body" />
   </div>
 </template>
@@ -14,7 +13,6 @@ export default {
     source: {
       type: String,
       default: 'Hello World ;)'
-
     }
   },
   computed: {
@@ -43,7 +41,6 @@ export default {
       var result = md.render(this.source)
       return result
     }
-
   }
 }
 </script>

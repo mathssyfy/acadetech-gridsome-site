@@ -6,7 +6,7 @@
     justify-center
   >
     <v-img
-      :src="require('@/static/img/astrology-astronomy-atmosphere.jpg')"
+      :src="require('@/assets/img/astrology-astronomy-atmosphere.jpg')"
       :height="windowSize.y"
       :width="windowSize.x"
       position="bottom"

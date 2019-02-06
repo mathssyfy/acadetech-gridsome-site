@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    
     <hero-image />
     <home-features />
     <v-layout
@@ -34,7 +33,6 @@
 </page-query>
 
 <script>
-
 import HeroImage from '@/components/HeroImage'
 import HomeFeatures from '@/components/HomeFeatures'
 
@@ -45,10 +43,7 @@ export default {
   },
   metaInfo: {
     title: 'AcadeTech',
-    meta: [
-      { name: 'author', content: 'David Couronné' }
-    ]
+    meta: [{ name: 'author', content: 'David Couronné' }]
   }
 }
 </script>
-

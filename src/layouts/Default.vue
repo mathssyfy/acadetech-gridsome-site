@@ -90,16 +90,14 @@
       <slot />
     </v-content>
 
-    <v-footer
-      :fixed="fixed"
-    >
+    <v-footer :fixed="fixed">
       <v-flex xs12>
         <div class="grey--text darken-2 ml-3">
           &copy; 2019 MIT Made with
           <v-icon class="green--text">
             favorite
-          </v-icon>
-          by <a href="https://github.com/mathssyfy/acadetech-gridsome-site">
+          </v-icon>by
+          <a href="https://github.com/mathssyfy/acadetech-gridsome-site">
             David Couronné
           </a>
         </div>
@@ -114,7 +112,12 @@ export default {
     return {
       scroll: 0,
       itemsExt: [
-        { faIcon: 'github', title: 'Kelvin Git', to: 'https://github.com/kelvin2go', target: '_blank' }
+        {
+          faIcon: 'github',
+          title: 'Kelvin Git',
+          to: 'https://github.com/kelvin2go',
+          target: '_blank'
+        }
       ],
       activenav: 'secundary',
       color: 'secondary',

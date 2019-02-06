@@ -23,7 +23,7 @@
               <v-card class="elevation-0 transparent">
                 <v-card-text class="text-xs-center">
                   <img
-                    src="@/static/img/logo.png"
+                    src="@/assets/img/logo.png"
                     width="40"
                     height="40"
                   >
@@ -59,7 +59,7 @@
               <v-card class="elevation-0 transparent">
                 <v-card-text class="text-xs-center">
                   <img
-                    src="@/static/img/vuetify-logo.svg"
+                    src="@/assets/img/vuetify-logo.svg"
                     width="40"
                     height="40"
                   >
@@ -96,7 +96,7 @@
               <v-card class="elevation-0 transparent">
                 <v-card-text class="text-xs-center">
                   <img
-                    src="@/static/img/contentful-logo.svg"
+                    src="@/assets/img/contentful-logo.svg"
                     width="40"
                     height="40"
                   >

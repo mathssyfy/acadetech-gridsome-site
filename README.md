@@ -5,9 +5,11 @@
   </a>
 </p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/mathssyfy/acadetech-gridsome-site.svg?branch=master)](https://travis-ci.org/mathssyfy/acadetech-gridsome-site)
+[![Known Vulnerabilities](https://snyk.io/test/github/mathssyfy/acadetech-gridsome-site/badge.svg?targetFile=package.json)](https://snyk.io/test/github/mathssyfy/acadetech-gridsome-site?targetFile=package.json)
 
-
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 You can use this repo as a gridsome-contentful-starter
 
@@ -20,24 +22,26 @@ yarn #or npm install
 ## Basic usage
 
 Edit `.env.sample` and rename it `.env`
+
 ```
 CTF_SPACE_ID = YOUR SPACE ID
 CTF_CDA_ACCESS_TOKEN = YOUR ACCESS TOKEN
 ```
 
 Then:
+
 ```bash
 yarn develop #Or npm run develop
 ```
 
 ### Configure with Contentful content named `Blog Post` with fields:
 
-+ title
-+ slug
-+ description
-+ body
-+ heroImage
-+ publishDate
+- title
+- slug
+- description
+- body
+- heroImage
+- publishDate
 
 In `src/pages/Blogs.vue`
 
@@ -84,8 +88,6 @@ query postQuery($path: String!) {
 
 Config markdown-it in `src/components/GridsomeMarkdownIt.vue`
 
-
-
 ## Scripts
 
 ```bash
@@ -93,6 +95,3 @@ yarn develop
 yarn build
 yarn lint
 ```
-
-
-

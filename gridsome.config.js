@@ -9,7 +9,6 @@ module.exports = {
         host: 'cdn.contentful.com',
         environment: 'master',
         typeName: 'Contentful'
-
       }
     }
   ]
