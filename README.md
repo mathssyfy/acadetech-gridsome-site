@@ -16,7 +16,7 @@ You can use this repo as a gridsome-contentful-starter
 ## Install
 
 ```bash
-yarn #or npm install
+npm install
 ```
 
 ## Basic usage
@@ -31,7 +31,7 @@ CTF_CDA_ACCESS_TOKEN = YOUR ACCESS TOKEN
 Then:
 
 ```bash
-yarn develop #Or npm run develop
+Or npm run develop
 ```
 
 ### Configure with Contentful content named `Blog Post` with fields:
@@ -91,7 +91,10 @@ Config markdown-it in `src/components/GridsomeMarkdownIt.vue`
 ## Scripts
 
 ```bash
-yarn develop
-yarn build
-yarn lint
+npm run develop
+npm run build
+npm run explore
+npm run lint
+npm run upgrade-interactive
+npm run snyk-protect
 ```

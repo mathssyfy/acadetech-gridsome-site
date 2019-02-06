@@ -10,7 +10,8 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "upgrade-interactive": "npm-check --update"
   },
   "dependencies": {
     "@gridsome/source-contentful": "^0.2.1",
@@ -43,12 +44,14 @@
     "eslint-plugin-vue": "^5.1.0",
     "lodash-webpack-plugin": "^0.11.5",
     "node-sass": "^4.11.0",
+    "npm-check": "^5.9.0",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.6.2",
-    "vue-template-compiler": "^2.6.2"
+    "vue-template-compiler": "^2.6.2",
+    "webpack": "^4.29.2"
   },
-  "snyk": true
+  "snyk": false
 }
