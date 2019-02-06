@@ -10,24 +10,21 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint"
   },
-  "resolutions": {
-    "terser": "3.14.1"
-  },
   "dependencies": {
     "@gridsome/source-contentful": "^0.2.1",
     "@mathssyfy/markdown-it-anchor": "^1.3.12",
     "@mathssyfy/markdown-it-container": "^1.3.11",
     "dotenv": "^6.2.0",
-    "gridsome": "^0.4.6",
+    "gridsome": "^0.4.7",
     "lodash": "^4.17.11",
     "markdown-it": "^8.4.2",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex-newcommand": "^1.0.7",
     "markdown-it-prism": "^2.0.1",
     "markdown-it-table-of-contents": "^0.4.3",
-    "vue": "^2.5.22",
+    "vue": "^2.6.2",
     "vue-markdown": "^2.2.4",
-    "vuetify": "^1.4.4"
+    "vuetify": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -48,6 +45,6 @@
     "stylus-loader": "^3.0.2",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.6.2",
-    "vue-template-compiler": "^2.5.22"
+    "vue-template-compiler": "^2.6.2"
   }
 }
