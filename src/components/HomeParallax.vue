@@ -11,11 +11,11 @@
         justify-center
         class="white--text"
       >
-        <!-- <img
-          :src="require('@/assets/img/hero3.jpg')"
+        <img
+          :src="require('@/assets/img/acadetech-icon.svg')"
           alt="Vuetify.js"
           height="200"
-        > -->
+        > 
         <h1 class="white--text mb-2 display-3 text-xs-center">
           AcadeTech
         </h1>

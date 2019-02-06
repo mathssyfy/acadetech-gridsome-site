@@ -90,19 +90,7 @@
       <slot />
     </v-content>
 
-    <v-footer :fixed="fixed" :clipped="clipped">
-      <v-flex xs12>
-        <div class="grey--text darken-2 ml-3">
-          &copy; 2019 MIT Made with
-          <v-icon class="green--text">
-            favorite
-          </v-icon>by
-          <a href="https://github.com/mathssyfy/acadetech-gridsome-site">
-            David Couronné
-          </a>
-        </div>
-      </v-flex>
-    </v-footer>
+    
   </v-app>
 </template>
 
