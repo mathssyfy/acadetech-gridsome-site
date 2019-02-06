@@ -90,7 +90,7 @@
       <slot />
     </v-content>
 
-    <v-footer :fixed="fixed">
+    <v-footer :fixed="fixed" :clipped="clipped">
       <v-flex xs12>
         <div class="grey--text darken-2 ml-3">
           &copy; 2019 MIT Made with
@@ -123,7 +123,7 @@ export default {
       color: 'secondary',
       clipped: true,
       drawer: null,
-      fixed: true,
+      fixed: false,
       isSidebarOpen: false,
       miniVariant: false,
       right: true,

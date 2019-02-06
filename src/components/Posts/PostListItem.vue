@@ -2,12 +2,15 @@
   <v-card
     hover
     flat
-    @click="handlePostcard"
+   
+    routeur
+        :to="`blog-post/${item.node.slug}`"
   >
     <v-img
       class="white--text"
       height="200px"
       :src="item.node.heroImage.file.url.src"
+      
     >
       <v-container
         fill-height

@@ -1,18 +1,30 @@
 <template>
-  <Layout>
-    <hero-image />
-    <home-features />
-    <v-layout
-      align-center
-      column
-      justify-center
+  <!-- <Layout> -->
+    <v-app>
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
     >
-      <h1 class="display-2 font-weight-thin mb-3">
-        AcadeTech
-      </h1>
-      <h2>Total Posts: {{ $page.posts.totalCount }}</h2>
-    </v-layout>
-  </Layout>
+      <home-parallax></home-parallax>
+    
+    <home-features />
+    <hero-image />
+    
+    <v-footer :fixed="fixed" :clipped="clipped">
+      <v-flex xs12>
+        <div class="grey--text darken-2 ml-3">
+          &copy; 2019 MIT Made with
+          <v-icon class="green--text">
+            favorite
+          </v-icon>by
+          <a href="https://github.com/mathssyfy/acadetech-gridsome-site">
+            David Couronné
+          </a>
+        </div>
+      </v-flex>
+    </v-footer>
+    </v-app>
+  <!-- </Layout> -->
 </template>
 
 <page-query>
@@ -35,11 +47,13 @@
 <script>
 import HeroImage from '@/components/HeroImage'
 import HomeFeatures from '@/components/HomeFeatures'
+import HomeParallax from '@/components/HomeParallax'
 
 export default {
   components: {
     HeroImage,
-    HomeFeatures
+    HomeFeatures,
+    HomeParallax
   },
   metaInfo: {
     title: 'AcadeTech',
