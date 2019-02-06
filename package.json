@@ -8,7 +8,9 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@gridsome/source-contentful": "^0.2.1",
@@ -24,7 +26,8 @@
     "markdown-it-table-of-contents": "^0.4.3",
     "vue": "^2.6.2",
     "vue-markdown": "^2.2.4",
-    "vuetify": "^1.5.0"
+    "vuetify": "^1.5.0",
+    "snyk": "^1.125.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -45,7 +48,7 @@
     "stylus-loader": "^3.0.2",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.6.2",
-    "vue-template-compiler": "^2.6.2",
-    "webpack": "^4.29.2"
-  }
+    "vue-template-compiler": "^2.6.2"
+  },
+  "snyk": true
 }
