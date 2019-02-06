@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    
     <hero-image />
     <home-features />
     <v-layout
