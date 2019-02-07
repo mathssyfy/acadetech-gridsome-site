@@ -33,8 +33,8 @@ export default {
       // TODO: Unit Test :((( !!!
 
       md.use(prism)
-      md.use(anchor)
-      md.use(toc)
+      //md.use(anchor)
+      //md.use(toc)
       md.use(emoji)
       md.use(container)
       md.use(katex)

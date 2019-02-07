@@ -1,5 +1,12 @@
 <template>
   <Layout>
+    <v-card>
+    <v-layout
+    justify-center
+    >
+    <v-card
+    max-width="75%"
+    >
     <v-img class="white--text" :src="$page.post.heroImage.file.url.src">
       <v-container fill-height fluid>
         <v-layout fill-height>
@@ -12,7 +19,11 @@
     <p class="text-xs-right">
       <a :to="$page.post.heroImage.description">img: {{ $page.post.heroImage.description }}</a>
     </p>
-    <gridsome-markdown-it :source="$page.post.body"/>
+    
+    <gridsome-markdown-it :source="$page.post.body" class="blog-content"/>
+    </v-card>
+    </v-layout>
+    </v-card>
   </Layout>
 </template>
 
@@ -42,3 +53,33 @@ export default {
   }
 };
 </script>
+
+<style>
+
+li {
+  margin-bottom: 25px;
+    line-height: 26px;
+    font-size: 20px;
+    color: #1e1e1e;
+}
+p{
+  background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    line-height: 26px;
+    font-size: 20px;
+    color: #1e1e1e;
+   
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+  
+
+</style>
