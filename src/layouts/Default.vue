@@ -9,7 +9,7 @@
       :mini-variant.sync="miniVariant"
       :clipped="clipped"
       fixed
-      app
+      
     >
       <v-list>
         <v-list-tile
@@ -110,8 +110,8 @@ export default {
       activenav: 'secundary',
       color: 'secondary',
       clipped: true,
-      drawer: false,
-      fixed: false,
+      drawer: null,
+      fixed: true,
       isSidebarOpen: false,
       miniVariant: false,
       right: true,

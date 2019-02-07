@@ -5,8 +5,9 @@
     justify-center
     >
     <v-card
-    max-width="75%"
+    max-width="700px"
     >
+    <v-responsive :aspect-ratio="2/1">
     <v-img class="white--text" :src="$page.post.heroImage.file.url.src">
       <v-container fill-height fluid>
         <v-layout fill-height>
@@ -16,6 +17,7 @@
         </v-layout>
       </v-container>
     </v-img>
+    </v-responsive>
     <p class="text-xs-right">
       <a :to="$page.post.heroImage.description">img: {{ $page.post.heroImage.description }}</a>
     </p>
