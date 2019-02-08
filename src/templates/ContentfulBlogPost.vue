@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <v-card>
+    <v-card class="blog">
     <v-layout
     justify-center
     >
@@ -57,7 +57,10 @@ export default {
 </script>
 
 <style>
-
+.blog {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 li {
   margin-bottom: 25px;
     line-height: 26px;

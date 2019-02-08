@@ -110,7 +110,7 @@ export default {
       activenav: 'secundary',
       color: 'secondary',
       clipped: true,
-      drawer: null,
+      drawer: false,
       fixed: true,
       isSidebarOpen: false,
       miniVariant: false,
