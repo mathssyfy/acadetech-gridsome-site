@@ -1,11 +1,8 @@
 <template>
   <Layout>
-    <v-card>
+    
     <v-layout
     justify-center
-    >
-    <v-card
-    max-width="700px"
     >
     <v-responsive :aspect-ratio="2/1">
     <v-img class="white--text" :src="$page.post.heroImage.file.url.src">
@@ -23,9 +20,9 @@
     </p>
     
     <gridsome-markdown-it :source="$page.post.body" class="blog-content"/>
-    </v-card>
+   
     </v-layout>
-    </v-card>
+    
   </Layout>
 </template>
 
