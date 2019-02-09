@@ -56,32 +56,4 @@ export default {
 };
 </script>
 
-<style>
 
-li {
-  margin-bottom: 25px;
-    line-height: 26px;
-    font-size: 20px;
-    color: #1e1e1e;
-}
-p{
-  background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 25px;
-    line-height: 26px;
-    font-size: 20px;
-    color: #1e1e1e;
-   
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;margin: 0 0 10px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-  
-
-</style>
