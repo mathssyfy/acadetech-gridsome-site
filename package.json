@@ -25,10 +25,12 @@
     "markdown-it-katex-newcommand": "^1.0.7",
     "markdown-it-prism": "^2.0.1",
     "markdown-it-table-of-contents": "^0.4.3",
+    "remark": "^10.0.1",
+    "remark-vue": "^0.9.4",
+    "snyk": "^1.125.0",
     "vue": "^2.6.2",
     "vue-markdown": "^2.2.4",
-    "vuetify": "^1.5.0",
-    "snyk": "^1.125.0"
+    "vuetify": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
