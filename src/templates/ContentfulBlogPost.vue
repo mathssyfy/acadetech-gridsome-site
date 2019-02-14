@@ -11,9 +11,11 @@
         </v-container>
       </v-img>
     </v-responsive>
+    
     <p class="text-xs-right">
       <a :to="$page.post.heroImage.description">img: {{ $page.post.heroImage.description }}</a>
     </p>
+   
     <gridsome-markdown-it :source="$page.post.body"/>
   </Layout>
 </template>
