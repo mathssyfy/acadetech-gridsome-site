@@ -13,28 +13,28 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@gridsome/source-contentful": "^0.2.1",
+    "@gridsome/source-contentful": "^0.3.0",
     "@mathssyfy/markdown-it-anchor": "^1.3.12",
     "@mathssyfy/markdown-it-container": "^1.3.11",
-    "dotenv": "^6.2.0",
-    "gridsome": "^0.4.7",
+    "dotenv": "^8.0.0",
+    "gridsome": "^0.6.2",
     "lodash": "^4.17.11",
     "markdown-it": "^8.4.2",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex-newcommand": "^1.0.7",
     "markdown-it-prism": "^2.0.1",
     "markdown-it-table-of-contents": "^0.4.3",
+    "snyk": "^1.130.0",
     "vue": "^2.6.2",
     "vue-markdown": "^2.2.4",
-    "vuetify": "^1.5.0",
-    "snyk": "^1.130.0"
+    "vuetify": "^1.5.14"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
+    "@vue/cli-service": "^3.8.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
@@ -49,7 +49,7 @@
     "url-loader": "^1.1.2",
     "vue-loader": "^15.6.2",
     "vue-template-compiler": "^2.6.2",
-    "webpack": "^4.29.2"
+    "webpack": "^4.32.2"
   },
   "snyk": true
 }
