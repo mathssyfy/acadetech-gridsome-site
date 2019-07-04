@@ -42,3 +42,134 @@ patch:
         patched: '2019-02-14T10:00:23.356Z'
     - gridsome > imagemin-webp > cwebp-bin > bin-wrapper > download > caw > tunnel-agent:
         patched: '2019-02-14T10:00:23.356Z'
+  SNYK-JS-LODASH-450202:
+    - '@gridsome/source-contentful > contentful > contentful-resolve-response > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - node-sass > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - lodash-webpack-plugin > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - eslint > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/core > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-service > html-webpack-plugin > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/core > @babel/generator > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - eslint-plugin-vue > vue-eslint-parser > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - eslint > table > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - eslint > inquirer > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/eslint-config-standard > eslint-plugin-import > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > webpack-merge > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-service > webpack-merge > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-service > webpack-bundle-analyzer > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > html-webpack-plugin > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-service > css-loader > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > eslint > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@gridsome/source-contentful > contentful > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @babel/core > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - babel-eslint > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-php-plugin > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/core > @babel/helpers > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@gridsome/source-contentful > contentful > contentful-sdk-core > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-service > webpack-dev-server > http-proxy-middleware > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @babel/core > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > eslint-plugin-vue > vue-eslint-parser > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > eslint > table > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > eslint > inquirer > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @babel/core > @babel/helpers > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/preset-env > @babel/plugin-transform-object-super > @babel/helper-replace-supers > @babel/traverse > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-babel > @vue/cli-shared-utils > request-promise-native > request-promise-core > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - babel-eslint > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > @babel/generator > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/preset-env > @babel/plugin-transform-classes > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-eslint > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-object-super > @babel/helper-replace-supers > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/plugin-proposal-class-properties > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/generator > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
+    - '@vue/cli-plugin-babel > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2019-07-04T05:35:50.867Z'
+    - gridsome > @vue/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-04T05:35:50.867Z'
