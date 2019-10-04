@@ -42,3 +42,134 @@ patch:
         patched: '2019-02-14T10:00:23.356Z'
     - gridsome > imagemin-webp > cwebp-bin > bin-wrapper > download > caw > tunnel-agent:
         patched: '2019-02-14T10:00:23.356Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > pacote > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-eslint > webpack > chrome-trace-event > npm > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > pacote > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libcipm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libcipm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > libnpmpublish > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libcipm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libcipm > pacote > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - webpack > chrome-trace-event > npm > libnpm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-service > webpack > chrome-trace-event > npm > libnpm > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-eslint > webpack > chrome-trace-event > npm > libnpm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libcipm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > libnpmpublish > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libcipm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > libnpmorg > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > libnpmhook > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > libnpmpublish > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > libnpmsearch > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > libnpmteam > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - gridsome > webpack > chrome-trace-event > npm > libnpm > npm-profile > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > libnpmaccess > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
+    - '@vue/cli-plugin-babel > webpack > chrome-trace-event > npm > libnpm > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-04T05:32:12.180Z'
