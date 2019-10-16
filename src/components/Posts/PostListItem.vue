@@ -6,6 +6,13 @@
     routeur
         :to="`blog-post/${item.node.slug}`"
   >
+  <h2
+              class="headline"
+              style="text-shadow: 0px 2px 5px #222;"
+            >
+              {{ item.node.title }}
+              
+            </h2>
     <v-img
       class="white--text"
       height="200px"
@@ -22,12 +29,7 @@
             align-end
             flexbox
           >
-            <h2
-              class="headline"
-              style="text-shadow: 0px 2px 5px #222;"
-            >
-              {{ item.node.title }}
-            </h2>
+            
           </v-flex>
         </v-layout>
       </v-container>

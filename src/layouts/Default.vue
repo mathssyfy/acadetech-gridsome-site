@@ -1,9 +1,7 @@
 <template>
-  <v-app>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
-      rel="stylesheet"
-    >
+  <v-app :dark="setTheme">
+    
+ 
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant.sync="miniVariant"
@@ -36,26 +34,24 @@
             icon
             @click="miniVariant = !miniVariant"
           >
-            <v-icon>photo_size_select_small</v-icon>
+            <v-icon>mdi-photo_size_select_small</v-icon>
           </v-btn>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar
+    <v-app-bar
       :clipped-left="clipped"
       fixed
       app
       dark
-      color="primary"
+      
+      hide-on-scroll
     >
-      <v-btn
-        dark
-        icon
-        @click.stop="drawer = !drawer"
-      >
-        <v-icon>reorder</v-icon>
-      </v-btn>
+      
+      <v-app-bar-nav-icon
+      @click.stop="drawer = !drawer"
+      ></v-app-bar-nav-icon>
       <v-btn
         dark
         icon
@@ -63,7 +59,7 @@
         exact
         to="/"
       >
-        <v-icon>home</v-icon>
+        <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-btn
         dark
@@ -72,25 +68,22 @@
         exact
         to="/blogs"
       >
-        <v-icon>school</v-icon>
+        <v-icon>mdi-school</v-icon>
       </v-btn>
-      <!--<v-btn
-        dark
-        icon
-        router
-        exact
-        to="/dev"
-      >
-        <v-icon>computer</v-icon>
-      </v-btn>-->
-      <!-- <v-toolbar-title v-text="title"/> -->
       <v-spacer />
-    </v-toolbar>
+      
+      
+      <v-btn 
+      icon
+      @click="goDark = !goDark">
+      <v-icon v-if="goDark">mdi-white-balance-sunny</v-icon>
+        <v-icon v-else>mdi-moon-waxing-crescent</v-icon> 
+      </v-btn>
+    </v-app-bar>
     <v-content>
       <slot />
     </v-content>
 
-    
   </v-app>
 </template>
 
@@ -98,6 +91,7 @@
 export default {
   data () {
     return {
+      goDark: false,
       scroll: 0,
       itemsExt: [
         {
@@ -118,13 +112,25 @@ export default {
       rightDrawer: false,
       title: 'AcadeTech',
       items: [
-        { icon: 'home', title: 'Accueil', to: '/' },
-        { icon: 'school', title: 'Blogs', to: '/blogs' }
+        { icon: 'mdi-home', title: 'Accueil', to: '/' },
+        { icon: 'mdi-school', title: 'Blogs', to: '/blogs' }
         /* { icon: 'computer', title: 'Développement', to: '/dev' },
         { icon: 'computer', title: 'Cover', to: '/cover' } */
       ]
     }
-  }
+  },
+  computed: {
+        setTheme() {
+            if (this.goDark == true) {
+                return (this.$vuetify.theme.dark = true);
+            } else {
+                return (this.$vuetify.theme.dark = false);
+            }
+        },
+        setGoDark() {
+          return this.goDark === !this.goDark;
+        }
+    }
 }
 </script>
 
