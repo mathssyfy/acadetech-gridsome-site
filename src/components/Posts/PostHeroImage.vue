@@ -1,7 +1,7 @@
 <template>
   <v-img
     class="white--text"
-    :src="post.heroImage.file.url.src"
+    :src="post.heroImage.file.url"
   >
     <v-container
       fill-height

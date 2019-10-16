@@ -2,45 +2,31 @@
   <v-card
     hover
     flat
-   
     routeur
-        :to="`blog-post/${item.node.slug}`"
+     :to="`blog-post/${item.node.slug}`"  
+    
   >
-  <h2
-              class="headline"
-              style="text-shadow: 0px 2px 5px #222;"
-            >
-              {{ item.node.title }}
-              
-            </h2>
     <v-img
-      class="white--text"
       height="200px"
       :src="item.node.heroImage.file.url"
       
     >
-      <v-container
-        fill-height
-        fluid
-      >
-        <v-layout fill-height>
-          <v-flex
-            xs12
-            align-end
-            flexbox
-          >
-            
-          </v-flex>
-        </v-layout>
-      </v-container>
     </v-img>
-    <v-card-title>
-      <div>
+    <v-card-title
+    >
+      <h2 
+              class="headline"
+              style="text-shadow: 0px 2px 5px #222;"
+      >
+        {{ item.node.title }}
+              
+      </h2>
+      <div>  
         <p
           v-if="item.node.author.name"
           class="grey--text"
         >
-          {{ item.node.createdAt | date }} by {{ item.node.author.name }}
+          {{ item.node.createdAt | date }} 
         </p>
         <p
           v-else
@@ -48,9 +34,7 @@
         >
           {{ item.node.createdAt | date }}
         </p>
-        <p>
-          {{ item.node.description | truncate(200) | tailing('...') }}
-        </p>
+        
       </div>
     </v-card-title>
     <v-card-actions>
@@ -62,7 +46,7 @@
         outline
         dark
       >
-        Read More
+        Continuer de lire
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -76,5 +60,5 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
