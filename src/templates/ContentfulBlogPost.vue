@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <v-responsive :aspect-ratio="2/1">
-      <v-img class="white--text" :src="$page.post.heroImage.file.url.src">
+      <v-img class="white--text" :src="$page.post.heroImage.file.url">
         <v-container fill-height fluid>
           <v-layout fill-height>
             <v-flex xs12 align-end flexbox>

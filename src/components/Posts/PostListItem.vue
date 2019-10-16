@@ -9,7 +9,7 @@
     <v-img
       class="white--text"
       height="200px"
-      :src="item.node.heroImage.file.url.src"
+      :src="item.node.heroImage.file.url"
       
     >
       <v-container
