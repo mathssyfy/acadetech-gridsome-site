@@ -1,16 +1,19 @@
 <template>
   <!-- <Layout> -->
-    <v-app>
-      <link
+  <v-app>
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
       rel="stylesheet"
     >
-      <home-parallax></home-parallax>
-    
+    <home-parallax />
+
     <home-features />
     <hero-image />
-    
-    <v-footer :fixed="fixed" :clipped="clipped">
+
+    <v-footer
+      :fixed="fixed"
+      :clipped="clipped"
+    >
       <v-flex xs12>
         <div class="grey--text darken-2 ml-3">
           &copy; 2019 MIT Made with
@@ -23,7 +26,7 @@
         </div>
       </v-flex>
     </v-footer>
-    </v-app>
+  </v-app>
   <!-- </Layout> -->
 </template>
 

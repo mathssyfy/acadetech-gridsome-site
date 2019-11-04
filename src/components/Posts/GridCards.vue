@@ -1,59 +1,84 @@
 <template>
-  <v-container fluid grid-list-md>
-    <v-layout row wrap>
-      <v-flex d-flex
+  <v-container
+    fluid
+    grid-list-md
+  >
+    <v-layout
+      row
+      wrap
+    >
+      <v-flex
         v-for="(card, idx) in cards"
-        v-bind="{ [`xs${flex}`]: true }"
         :key="idx"
+        d-flex
+        v-bind="{ [`xs${flex}`]: true }"
       >
         <v-card>
           <v-card-media
+            v-if="card.src != ''"
             class="white--text"
             height="200px"
             :src="card.src"
-            v-if="card.src != ''"
           >
             <v-layout
-              column class="media"
-              @click.stop="toRoute('vuejs_view_article',{id: card.id})"
+              column
+              class="media"
               style="cursor: pointer"
+              @click.stop="toRoute('vuejs_view_article',{id: card.id})"
             >
               <v-card-title>
-                <v-spacer></v-spacer>
-                <v-btn dark icon>
+                <v-spacer />
+                <v-btn
+                  dark
+                  icon
+                >
                   <v-icon>thumb_up</v-icon>
                 </v-btn>
               </v-card-title>
-              <v-spacer></v-spacer>
+              <v-spacer />
               <v-card-title class="white--text pt-5">
-                <div class="body-2 pl-5 pt-5">{{card.meta}}</div>
+                <div class="body-2 pl-5 pt-5">
+                  {{ card.meta }}
+                </div>
               </v-card-title>
             </v-layout>
           </v-card-media>
           <v-card-title>
             <div>
-              <v-flex class="title"
-                @click.stop="toRoute('vuejs_view_article',{id: card.id})"
+              <v-flex
+                class="title"
                 style="cursor: pointer"
-              >{{card.title}}</v-flex>
+                @click.stop="toRoute('vuejs_view_article',{id: card.id})"
+              >
+                {{ card.title }}
+              </v-flex>
               <v-flex class="body-1">
-                <span v-if="card.subtitle.length > 140" class="grey--text">
-                  {{card.subtitle.substring(0, 140)}}... &nbsp;&nbsp;
+                <span
+                  v-if="card.subtitle.length > 140"
+                  class="grey--text"
+                >
+                  {{ card.subtitle.substring(0, 140) }}... &nbsp;&nbsp;
                   <a href="#">read more</a>
                 </span>
-                <span v-else class="grey--text">
-                  {{card.subtitle}} &nbsp;&nbsp;
+                <span
+                  v-else
+                  class="grey--text"
+                >
+                  {{ card.subtitle }} &nbsp;&nbsp;
                 </span>
               </v-flex>
             </div>
-              <v-layout row wrap>
-                <v-flex
-                  v-for="(topic, index) in card.topics"
-                  :key="index"
-                >
-                  <a href="">{{topic}}</a>
-                </v-flex>
-              </v-layout>
+            <v-layout
+              row
+              wrap
+            >
+              <v-flex
+                v-for="(topic, index) in card.topics"
+                :key="index"
+              >
+                <a href="">{{ topic }}</a>
+              </v-flex>
+            </v-layout>
           </v-card-title>
         </v-card>
       </v-flex>
@@ -64,8 +89,6 @@
 <script>
 export default {
   name: 'GridCards',
-  created () {
-  },
   data: () => ({
     cards: [
       {
@@ -177,10 +200,12 @@ export default {
       }
     }
   },
+  created () {
+  },
   methods: {
     toRoute (rname, rparams = {}, query = {}) {
       this.dialog = true
-      this.$router.push({name: rname, params: rparams, query: query})
+      this.$router.push({ name: rname, params: rparams, query: query })
     }
   }
 }

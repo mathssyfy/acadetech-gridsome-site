@@ -26,7 +26,6 @@
     "markdown-it-prism": "^2.0.1",
     "markdown-it-table-of-contents": "^0.4.3",
     "snyk": "^1.235.0",
-    "vue": "^2.6.2",
     "vue-markdown": "^2.2.4",
     "vuetify": "^2.1.4"
   },
@@ -47,12 +46,11 @@
     "lodash-webpack-plugin": "^0.11.5",
     "sass": "^1.23.0",
     "sass-loader": "^8.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
     "url-loader": "^2.2.0",
     "vue-loader": "^15.6.2",
     "vue-template-compiler": "^2.6.2",
-    "webpack": "^4.32.2"
+    "webpack": "^4.32.2",
+    "webpack-node-externals": "^1.7.2"
   },
   "snyk": true
 }

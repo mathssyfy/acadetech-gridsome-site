@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <v-container fluid grid-list-md>
+    <v-container
+      fluid
+      grid-list-md
+    >
       <v-layout
         row
         wrap
@@ -55,6 +58,6 @@ export default {
         case 'xl': return 2
       }
     }
-  },
+  }
 }
 </script>

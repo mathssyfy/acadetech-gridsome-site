@@ -1,7 +1,5 @@
 <template>
   <v-app :dark="setTheme">
-    
- 
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant.sync="miniVariant"
@@ -45,13 +43,12 @@
       fixed
       app
       dark
-      
+
       hide-on-scroll
     >
-      
       <v-app-bar-nav-icon
-      @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+        @click.stop="drawer = !drawer"
+      />
       <v-btn
         dark
         icon
@@ -71,19 +68,33 @@
         <v-icon>mdi-school</v-icon>
       </v-btn>
       <v-spacer />
-      
-      
-      <v-btn 
-      icon
-      @click="goDark = !goDark">
-      <v-icon v-if="goDark">mdi-white-balance-sunny</v-icon>
-        <v-icon v-else>mdi-moon-waxing-crescent</v-icon> 
+
+      <v-btn
+        icon
+        @click="goDark = !goDark"
+      >
+        <v-icon v-if="goDark">
+          mdi-white-balance-sunny
+        </v-icon>
+        <v-icon v-else>
+          mdi-moon-waxing-crescent
+        </v-icon>
       </v-btn>
     </v-app-bar>
-    <v-content>
-      <slot />
-    </v-content>
 
+    <v-responsive
+      class="mx-auto overflow-visible"
+      max-width="1024"
+    >
+    <v-container>
+    <v-responsive
+          class="overflow-visible"
+          min-height="90vh"
+        >
+      <slot />
+    </v-responsive>
+    </v-container>
+    </v-responsive>
   </v-app>
 </template>
 
@@ -120,17 +131,16 @@ export default {
     }
   },
   computed: {
-        setTheme() {
-            if (this.goDark == true) {
-                return (this.$vuetify.theme.dark = true);
-            } else {
-                return (this.$vuetify.theme.dark = false);
-            }
-        },
-        setGoDark() {
-          return this.goDark === !this.goDark;
-        }
+    setTheme () {
+      if (this.goDark == true) {
+        return (this.$vuetify.theme.dark = true)
+      } else {
+        return (this.$vuetify.theme.dark = false)
+      }
+    },
+    setGoDark () {
+      return this.goDark === !this.goDark
     }
+  }
 }
 </script>
-
