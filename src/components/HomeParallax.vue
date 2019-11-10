@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-img
-      :src="require('@/assets/img/art-dark-dawn.jpg')"
+      src="https://res.cloudinary.com/dpw19qolx/image/upload/v1573405573/art-dark-dawn.jpg"
       height="600"
     >
       <v-layout
@@ -32,8 +32,8 @@
           class="mt-5 white white--text"
           dark
           large
-          outline
-          round
+          outlined
+          rounded
           href="/blogs"
         >
           Get Started
