@@ -4,7 +4,8 @@
 
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import '@mdi/font/css/materialdesignicons.css'
+// import '@mdi/font/css/materialdesignicons.css'
+import './assets/style/index.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { appOptions, head }) {
