@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-img
-      src="https://res.cloudinary.com/dpw19qolx/image/upload/v1573405573/art-dark-dawn.jpg"
+      :src="require('@/assets/img/art-dark-dawn.jpg')"
       height="600"
     >
       <v-layout
@@ -29,7 +29,7 @@
         </div>
 
         <v-btn
-          class="mt-5 white white--text"
+          class="mt-5"
           dark
           large
           outlined

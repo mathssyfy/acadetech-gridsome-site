@@ -31,11 +31,11 @@
           justify-space-between
         >
           <v-btn
-            class="mt-5 white white--text"
+            class="mt-5 "
             dark
             large
-            outline
-            round
+            outlined
+            rounded
             href="/blogs"
           >
             {{ btnText }}

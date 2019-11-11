@@ -7,34 +7,47 @@
       fixed
       app
     >
-      <v-list>
-        <v-list-tile
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title class="title">
+              AcadeteX
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              Start Learning
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-divider />
+        <v-list-item
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
-          :active-class="color"
-          router
-          exact
-        >
-          <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-divider />
-      </v-list>
 
-      <v-list subheader>
-        <v-list-tile>
-          <v-btn
-            icon
-            @click="miniVariant = !miniVariant"
-          >
-            <v-icon>mdi-photo_size_select_small</v-icon>
-          </v-btn>
-        </v-list-tile>
+          link
+        >
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider />
+        <v-list-item @click="miniVariant = !miniVariant">
+          <v-list-item-icon>
+            <v-icon>mdi-clock-start</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Collapse</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -86,14 +99,14 @@
       class="mx-auto overflow-visible"
       max-width="1024"
     >
-    <v-container>
-    <v-responsive
+      <v-container>
+        <v-responsive
           class="overflow-visible"
           min-height="90vh"
         >
-      <slot />
-    </v-responsive>
-    </v-container>
+          <slot />
+        </v-responsive>
+      </v-container>
     </v-responsive>
   </v-app>
 </template>

@@ -1,9 +1,9 @@
 <template lang="html">
   <v-card
     hover
-    flat
+    text
     routeur
-    :to="`blog-post/${item.node.slug}`"
+    :to="`blog/${item.node.slug}`"
   >
     <v-img
       height="200px"
@@ -35,12 +35,12 @@
       <v-btn
         color="success"
         routeur
-        :to="`blog-post/${item.node.slug}`"
-        flat
-        outline
+        :to="`blog/${item.node.slug}`"
+        text
+        outlined
         dark
       >
-        Continuer de lire
+        Continuer de lire {{ item.node.path }}
       </v-btn>
     </v-card-actions>
   </v-card>
