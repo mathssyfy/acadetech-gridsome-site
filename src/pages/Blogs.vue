@@ -30,6 +30,7 @@
           slug
           title
           description
+          cloudinary{url}
           heroImage{
             description
             file{url}}
