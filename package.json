@@ -10,7 +10,7 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect",
+    "prepare": "yarn snyk-protect",
     "test": "snyk test"
   },
   "dependencies": {
