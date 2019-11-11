@@ -31,9 +31,9 @@
             <v-spacer />
             <v-btn
               color="white"
-              outline
-              round
-              flat
+              outlined
+              rounded
+              text
               @click="handleShare(article)"
             >
               Share
@@ -87,7 +87,7 @@
               :value="true"
               color="info"
               icon="info"
-              outline
+              outlined
               class="mx-3"
             >
               Be the first to leave a comment!
@@ -178,7 +178,7 @@
                   <div class="text-xs-right">
                     <v-btn
                       type="submit"
-                      round
+                      rounded
                       depressed
                       class="white--text"
                       color="green lighten-1"

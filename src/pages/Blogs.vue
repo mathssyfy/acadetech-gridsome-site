@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <v-container>
+    <v-container
+      fluid
+      grid-list-md
+    >
       <v-layout
         row
         wrap
@@ -8,10 +11,7 @@
         <v-flex
           v-for="item in $page.posts.edges"
           :key="item.slug"
-          xs12
-          sm6
-          lg4
-          pa-2
+          v-bind="{ [`xs${flex}`]: true }"
         >
           <post-list-item :item="item" />
         </v-flex>
@@ -30,6 +30,7 @@
           slug
           title
           description
+          cloudinary{url}
           heroImage{
             description
             file{url}}
@@ -47,6 +48,17 @@ import PostListItem from '@/components/Posts/PostListItem'
 export default {
   components: {
     PostListItem
+  },
+  computed: {
+    flex () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 12
+        case 'sm': return 6
+        case 'md': return 4
+        case 'lg': return 3
+        case 'xl': return 2
+      }
+    }
   }
 }
 </script>

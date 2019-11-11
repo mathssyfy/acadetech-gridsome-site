@@ -1,22 +1,25 @@
-import Vuetify from 'vuetify'
-import colors from 'vuetify/es5/util/colors'
-import DefaultLayout from '~/layouts/Default.vue'
-
 
 // import 'vuetify/dist/vuetify.min.css'
-import '@/assets/stylus/main.styl'
+// import '@/assets/stylus/main.styl'
 
-export default function (Vue) {
-  Vue.use(Vuetify, {
-    theme: {
-      primary: '#121212', // a color that is not in the material colors palette
-      accent: colors.grey.darken3,
-      secondary: colors.amber.darken3,
-      info: colors.teal.lighten1,
-      warning: colors.amber.base,
-      error: colors.deepOrange.accent4,
-      success: colors.green.accent3
-    }
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import '@mdi/font/css/materialdesignicons.css'
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { appOptions, head }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
   })
+
+  const opts = { theme: {
+    dark: true
+  } } // opts includes, vuetify themes, icons, etc.
+  Vue.use(Vuetify)
+
+  appOptions.vuetify = new Vuetify(opts)
+
+  // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }

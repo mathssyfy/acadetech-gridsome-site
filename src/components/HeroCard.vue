@@ -23,13 +23,13 @@
 
         <v-card-actions>
           <v-btn
-            flat
+            text
             color="orange"
           >
             Share
           </v-btn>
           <v-btn
-            flat
+            text
             color="orange"
           >
             Explore

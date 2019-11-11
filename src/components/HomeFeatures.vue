@@ -40,8 +40,8 @@
                   Gridsome is a Vue-powered static site generator for building CDN-ready websites for any headless CMS, local files or APIs.
                   <v-card-text class="text-xs-center">
                     <v-btn
-                      outline
-                      round
+                      outlined
+                      rounded
                       color="success"
                       href="https://gridsome.org/"
                       target="_blank"
@@ -77,8 +77,8 @@
                   Be prepared for an armada of specialized components at your disposal. With over 80 in total, there is a solution for any application.
                   <v-card-text class="text-xs-center">
                     <v-btn
-                      outline
-                      round
+                      outlined
+                      rounded
                       color="info"
                       href="https://vuetifyjs.com/en/"
                       target="_blank"
@@ -114,8 +114,8 @@
                   gridsome + contentful have no harzzel on server content now. Fast. Flexible. Future-proof.
                   <v-card-text class="text-xs-center">
                     <v-btn
-                      outline
-                      round
+                      outlined
+                      rounded
                       color="error"
                       href="https://www.contentful.com/developers/docs/javascript/tutorials/integrate-contentful-with-vue-and-nuxt/"
                       target="_blank"

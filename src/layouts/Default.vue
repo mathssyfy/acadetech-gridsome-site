@@ -1,9 +1,5 @@
 <template>
-  <v-app>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
-      rel="stylesheet"
-    >
+  <v-app :dark="setTheme">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant.sync="miniVariant"
@@ -11,51 +7,61 @@
       fixed
       app
     >
-      <v-list>
-        <v-list-tile
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title class="title">
+              AcadeteX
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              Start Learning
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-divider />
+        <v-list-item
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
-          :active-class="color"
-          router
-          exact
-        >
-          <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-divider />
-      </v-list>
 
-      <v-list subheader>
-        <v-list-tile>
-          <v-btn
-            icon
-            @click="miniVariant = !miniVariant"
-          >
-            <v-icon>photo_size_select_small</v-icon>
-          </v-btn>
-        </v-list-tile>
+          link
+        >
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider />
+        <v-list-item @click="miniVariant = !miniVariant">
+          <v-list-item-icon>
+            <v-icon>mdi-clock-start</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Collapse</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar
+    <v-app-bar
       :clipped-left="clipped"
       fixed
       app
       dark
-      color="primary"
+
+      hide-on-scroll
     >
-      <v-btn
-        dark
-        icon
+      <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
-      >
-        <v-icon>reorder</v-icon>
-      </v-btn>
+      />
       <v-btn
         dark
         icon
@@ -63,7 +69,7 @@
         exact
         to="/"
       >
-        <v-icon>home</v-icon>
+        <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-btn
         dark
@@ -72,25 +78,36 @@
         exact
         to="/blogs"
       >
-        <v-icon>school</v-icon>
+        <v-icon>mdi-school</v-icon>
       </v-btn>
-      <!--<v-btn
-        dark
-        icon
-        router
-        exact
-        to="/dev"
-      >
-        <v-icon>computer</v-icon>
-      </v-btn>-->
-      <!-- <v-toolbar-title v-text="title"/> -->
       <v-spacer />
-    </v-toolbar>
-    <v-content>
-      <slot />
-    </v-content>
 
-    
+      <v-btn
+        icon
+        @click="goDark = !goDark"
+      >
+        <v-icon v-if="goDark">
+          mdi-white-balance-sunny
+        </v-icon>
+        <v-icon v-else>
+          mdi-moon-waxing-crescent
+        </v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-responsive
+      class="mx-auto overflow-visible"
+      max-width="1024"
+    >
+      <v-container>
+        <v-responsive
+          class="overflow-visible"
+          min-height="90vh"
+        >
+          <slot />
+        </v-responsive>
+      </v-container>
+    </v-responsive>
   </v-app>
 </template>
 
@@ -98,6 +115,7 @@
 export default {
   data () {
     return {
+      goDark: false,
       scroll: 0,
       itemsExt: [
         {
@@ -118,13 +136,24 @@ export default {
       rightDrawer: false,
       title: 'AcadeTech',
       items: [
-        { icon: 'home', title: 'Accueil', to: '/' },
-        { icon: 'school', title: 'Blogs', to: '/blogs' }
+        { icon: 'mdi-home', title: 'Accueil', to: '/' },
+        { icon: 'mdi-school', title: 'Blogs', to: '/blogs' }
         /* { icon: 'computer', title: 'Développement', to: '/dev' },
         { icon: 'computer', title: 'Cover', to: '/cover' } */
       ]
     }
+  },
+  computed: {
+    setTheme () {
+      if (this.goDark == true) {
+        return (this.$vuetify.theme.dark = true)
+      } else {
+        return (this.$vuetify.theme.dark = false)
+      }
+    },
+    setGoDark () {
+      return this.goDark === !this.goDark
+    }
   }
 }
 </script>
-

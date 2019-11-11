@@ -16,11 +16,10 @@
         align-center
         justify-center
       >
-      <img
+        <img
           :src="require('@/assets/img/acadetech-icon.svg')"
           alt="AcadeTech logo"
-          
-        > 
+        >
         <div class="display-3 white--text mb-3 text-xs-center">
           {{ mainTitle }}
         </div>
@@ -32,11 +31,11 @@
           justify-space-between
         >
           <v-btn
-            class="mt-5 white white--text"
+            class="mt-5 "
             dark
             large
-            outline
-            round
+            outlined
+            rounded
             href="/blogs"
           >
             {{ btnText }}
