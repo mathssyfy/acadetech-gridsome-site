@@ -10,7 +10,7 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint",
     "snyk-protect": "snyk protect",
-    "prepare": "yarn snyk-protect",
+    "prepare": "npm run snyk-protect && yarn snyk-protect",
     "test": "snyk test"
   },
   "dependencies": {
@@ -25,7 +25,7 @@
     "markdown-it-katex-newcommand": "^1.0.7",
     "markdown-it-prism": "^2.0.1",
     "markdown-it-table-of-contents": "^0.4.3",
-    "snyk": "^1.235.0",
+    "snyk": "^1.258.2",
     "vue-markdown": "^2.2.4",
     "vuetify": "^2.1.9"
   },
