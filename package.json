@@ -25,7 +25,7 @@
     "markdown-it-katex-newcommand": "^1.1.1",
     "markdown-it-prism": "^2.0.4",
     "markdown-it-table-of-contents": "^0.4.4",
-    "snyk": "^1.297.2",
+    "snyk": "^1.316.1",
     "vue-markdown": "^2.2.4",
     "vuetify": "^2.2.15"
   },
