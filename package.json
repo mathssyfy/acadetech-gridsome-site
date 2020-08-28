@@ -19,7 +19,7 @@
     "@mathssyfy/markdown-it-container": "^1.3.11",
     "dotenv": "^8.2.0",
     "gridsome": "^0.7.13",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.17",
     "markdown-it": "^10.0.0",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex-newcommand": "^1.1.1",
