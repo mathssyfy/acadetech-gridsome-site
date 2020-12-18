@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-main>
     <section>
       <v-parallax
         bottom
@@ -152,5 +152,5 @@
         </v-flex>
       </v-layout>
     </section>
-  </v-content>
+  </v-main>
 </template>
