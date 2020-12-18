@@ -26,7 +26,7 @@
     "markdown-it-prism": "^2.0.4",
     "markdown-it-table-of-contents": "^0.4.4",
     "snyk": "^1.297.2",
-    "vue-markdown": "^2.2.4",
+    "vue-markdown": "^2.1.2",
     "vuetify": "^2.2.15"
   },
   "devDependencies": {
