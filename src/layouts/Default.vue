@@ -95,19 +95,9 @@
       </v-btn>
     </v-app-bar>
 
-    <v-responsive
-      class="mx-auto overflow-visible"
-      max-width="1024"
-    >
-      <v-container>
-        <v-responsive
-          class="overflow-visible"
-          min-height="90vh"
-        >
-          <slot />
-        </v-responsive>
-      </v-container>
-    </v-responsive>
+    <v-main>
+      <slot />
+    </v-main>
   </v-app>
 </template>
 
