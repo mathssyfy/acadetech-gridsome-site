@@ -1,36 +1,22 @@
 <template lang="html">
   <v-card
-    class="mx-auto"
-    max-width="400"
+    class="ma-5"
+          elevation="3"
+          width="500"
     routeur
     :to="`blog/${item.node.slug}`"
   >
     <v-img
-      height="200px"
+      cover
+      :aspect-ratio="16/9"
       :src="item.node.heroImage.file.url"
     />
     <v-card-title>
-      <h2
-        class="headline"
-        style="text-shadow: 0px 2px 5px #222;"
-      >
+      
         {{ item.node.title }}
-      </h2>
-      <div>
-        <p
-          v-if="item.node.author.name"
-          class="grey--text"
-        >
-          {{ item.node.createdAt | date }}
-        </p>
-        <p
-          v-else
-          class="grey--text"
-        >
-          {{ item.node.createdAt | date }}
-        </p>
-      </div>
-    </v-card-title>
+    </v-card-title>  
+    <v-card-subtitle>Par {{ item.node.author.name }}</v-card-subtitle>
+    <v-card-subtitle>{{ item.node.createdAt | date }}</v-card-subtitle>  
     <v-card-actions>
       <v-btn
         color="success"
