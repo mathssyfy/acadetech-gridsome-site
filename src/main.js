@@ -3,7 +3,7 @@
 // import '@/assets/stylus/main.styl'
 
 import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+//import 'vuetify/dist/vuetify.min.css'
 // import '@mdi/font/css/materialdesignicons.css'
 import './assets/style/index.scss'
 import DefaultLayout from '~/layouts/Default.vue'
