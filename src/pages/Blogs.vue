@@ -1,17 +1,14 @@
 <template>
   <Layout>
     <v-container>
-      <v-layout
-        row
-        wrap
-      >
+      <div class="d-flex flex-wrap justify-center">
         <v-flex
           v-for="item in $page.posts.edges"
           :key="item.slug"
         >
           <post-list-item :item="item" />
         </v-flex>
-      </v-layout>
+      </div>
     </v-container>
   </Layout>
 </template>
