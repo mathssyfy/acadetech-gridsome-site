@@ -57,7 +57,7 @@
       app
       dark
 
-      hide-on-scroll
+      
     >
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
