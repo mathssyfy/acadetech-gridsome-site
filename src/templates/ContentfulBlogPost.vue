@@ -34,10 +34,11 @@
           </v-img>
 
           <p class="text-xs-right">
-            <a
+            <g-link
               :to="$page.post.heroImage.description"
-            >img: {{ $page.post.heroImage.description }}</a>
-          </p>
+            >{{ $page.post.heroImage.description }}
+            </g-link>
+            </p>
 
           <gridsome-markdown-it :source="$page.post.body" />
         </v-col>
@@ -61,14 +62,14 @@ query postQuery($path: String!) {
 </page-query>
 
 <script>
-import GridsomeMarkdownIt from '@/components/GridsomeMarkdownIt'
+import GridsomeMarkdownIt from "@/components/GridsomeMarkdownIt";
 export default {
   components: {
-    GridsomeMarkdownIt
+    GridsomeMarkdownIt,
   },
   metaInfo: {
-    title: 'AcadeTech',
-    meta: [{ name: 'author', content: 'David Couronné' }]
-  }
-}
+    title: "AcadeTech",
+    meta: [{ name: "author", content: "David Couronné" }],
+  },
+};
 </script>
