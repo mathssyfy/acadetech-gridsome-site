@@ -40,7 +40,11 @@
           slug
           title
           createdAt
+          cloudinary{
+      url
+      }
          }
+         
       }
 
     }
