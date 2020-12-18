@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import 'prismjs/themes/prism-dark.css'
+//import 'prismjs/themes/prism-dark.css'
 import 'katex/dist/katex.css'
 export default {
   props: {
