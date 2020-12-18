@@ -1,37 +1,48 @@
 <template>
   <Layout>
-    <v-responsive :aspect-ratio="2/1">
-      <v-img
-        class="white--text"
-        :src="$page.post.heroImage.file.url"
-      >
-        <v-container
-          fill-height
-          fluid
+    <v-container class="mb-15">
+      <v-row justify="center">
+        <v-col
+          xl="5"
+          lg="7"
+          md="10"
+          sm="10"
         >
-          <v-layout fill-height>
-            <v-flex
-              xs12
-              align-end
-              flexbox
+          <v-img
+            class="white--text"
+            :src="$page.post.heroImage.file.url"
+          >
+            <v-container
+              fill-height
+              fluid
             >
-              <h2
-                class="headline"
-                style="text-shadow: 0px 2px 5px #222;"
-              >
-                {{ $page.post.title }}
-              </h2>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-img>
-    </v-responsive>
+              <v-layout fill-height>
+                <v-flex
+                  xs12
+                  align-end
+                  flexbox
+                >
+                  <h2
+                    class="headline"
+                    style="text-shadow: 0px 2px 5px #222"
+                  >
+                    {{ $page.post.title }}
+                  </h2>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
 
-    <p class="text-xs-right">
-      <a :to="$page.post.heroImage.description">img: {{ $page.post.heroImage.description }}</a>
-    </p>
+          <p class="text-xs-right">
+            <a
+              :to="$page.post.heroImage.description"
+            >img: {{ $page.post.heroImage.description }}</a>
+          </p>
 
-    <gridsome-markdown-it :source="$page.post.body" />
+          <gridsome-markdown-it :source="$page.post.body" />
+        </v-col>
+      </v-row>
+    </v-container>
   </Layout>
 </template>
 
