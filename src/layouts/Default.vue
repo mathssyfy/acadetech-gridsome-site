@@ -145,7 +145,7 @@ export default {
   },
   computed: {
     setTheme () {
-      if (this.goDark == true) {
+      if (this.goDark === true) {
         return (this.$vuetify.theme.dark = true)
       } else {
         return (this.$vuetify.theme.dark = false)
