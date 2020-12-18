@@ -1,7 +1,7 @@
 <template lang="html">
   <v-card
-    hover
-    text
+    class="mx-auto"
+    max-width="400"
     routeur
     :to="`blog/${item.node.slug}`"
   >
