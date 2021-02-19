@@ -23,7 +23,7 @@
     "markdown-it": "^12.0.3",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex-newcommand": "^1.1.1",
-    "markdown-it-prism": "^2.0.4",
+    "markdown-it-prism": "^2.1.4",
     "snyk": "^1.297.2",
     "vuetify": "^2.3.21"
   },
