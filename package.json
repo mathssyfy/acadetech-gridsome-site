@@ -33,7 +33,7 @@
     "@mdi/font": "^5.8.55",
     "@vue/cli-plugin-babel": "^4.0.5",
     "@vue/cli-plugin-eslint": "^4.0.5",
-    "@vue/cli-service": "^4.0.5",
+    "@vue/cli-service": "^4.5.13",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
